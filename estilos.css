@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+/* SLIDERS DE IMAGENES */
+
+.fondoIndex{
+    background-color:#F8F9FA;
+}
+
+@media screen and (min-width:1200px){
+    .carousel-inner{
+    height: 821px;
+    }
+}
+
