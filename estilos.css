@@ -1,34 +1,136 @@
-*{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Covered+By+Your+Grace&family=Lobster+Two:ital@1&family=Reenie+Beanie&family=Rubik+Marker+Hatch&display=swap');
+
+/* General */
+
+*{ 
+    margin: 0%;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #e5eee6;
 }
 
 nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
 }
 
-/* SLIDERS DE IMAGENES */
 
-.fondoIndex{
-    background-color:#F8F9FA;
+
+.banner{
+    background-image: url(./img/bannerCarousel.png);
+    background-size: cover;
+    padding: 12%;
 }
 
-@media screen and (min-width:1200px){
-    .carousel-inner{
-    height: 821px;
+.tituloIndex{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 150px;
+    color: #F8F9FA;
+}
+
+.tituloIndex:hover{
+    text-shadow: 0 0 20px;
+    transition: 0.1s;
+}
+
+
+a{
+    text-decoration: none;
+    color: #F8F9FA;
+}
+
+.fotoPresentacion{
+    height: 260px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 10%;
+}
+
+.indexGrid{
+    width: 100%;
+    text-align: center;
+}
+.cajaIndex{
+    margin-top: 200px;
+    background-color: rgb(69, 88, 67);
+    padding: 10% 0% 10% 0%;
+}
+.footerFondo {
+    background: rgb(199, 214, 196);
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    width: 100%;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px 15px 0px;
+    font-size: 30px;
+}
+
+.redesIconos{
+    padding: 30px 50px 0px 50px;
+    text-decoration: none;
+    color: rgb(5, 42, 7);
+    transition: 0.4s;
+}
+
+.redesIconos:hover{
+    color: rgba(101, 189, 110, 0.701);
+    text-shadow: 0 0 7px;
+    transform: scale(1.2);
+}
+
+.pFooter{    
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin: 0%;
+    color: rgb(0, 0, 0);
+} 
+
+@media screen and (max-width: 720px){
+    .tamañoLogo{
+        height: 100px;
+        width: 200px;
+    }
+    .banner{
+        background-image: url(./img/bannerM.png);
+        background-size: cover;
+        padding: 27%;
+        mask: rgb(0, 0, 0);
+    }
+    .tituloIndex{
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 60px;
+        color: #ffffff;
+        text-shadow: 0 0 20px black;
+        margin-left: -40px;
+    }
+
+    .fotoPresentacion{
+        height: 160px;
+        width: 150px;
+        border-radius: 50%;
+        margin-top: 25%;
+    }
+
+    .indexGrid{
+        width: 100%;
+        text-align: center;
     }
 }
 
-/* .carousel-caption{
-    font-size: 25px;
-}
 
-h5{
-    font-size: 65px;
-    margin-bottom: 200px;
-} */
