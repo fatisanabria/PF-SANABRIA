@@ -52,10 +52,6 @@ a{
     margin-top: 10%;
 }
 
-.indexGrid{
-    width: 100%;
-    text-align: center;
-}
 .cajaIndex{
     margin-top: 200px;
     background-color: rgb(69, 88, 67);
@@ -63,7 +59,7 @@ a{
 }
 .footerFondo {
     background: rgb(199, 214, 196);
-    position: static;
+    position: fixed ;
     bottom: 0;
     left: 0;
     right: 0;
@@ -74,12 +70,12 @@ a{
 .redes{
     display: flex;
     justify-content: center;
-    margin: 5px 0px 15px 0px;
+    margin: 0px 0px 15px 0px;
     font-size: 30px;
 }
 
 .redesIconos{
-    padding: 30px 50px 0px 50px;
+    padding: 23px 50px 0px 50px;
     text-decoration: none;
     color: rgb(5, 42, 7);
     transition: 0.4s;
@@ -100,6 +96,9 @@ a{
     margin: 0%;
     color: rgb(0, 0, 0);
 } 
+textarea{
+    resize: none;
+}
 
 @media screen and (max-width: 720px){
     .tamañoLogo{
@@ -130,6 +129,10 @@ a{
     .indexGrid{
         width: 100%;
         text-align: center;
+    }
+
+    .botonSumbit{
+        margin-bottom: 18%;
     }
 }
 
