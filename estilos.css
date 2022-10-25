@@ -25,7 +25,7 @@ nav{
 .banner{
     background-image: url(./img/bannerCarousel.png);
     background-size: cover;
-    padding: 12%;
+    padding: 17%;
 }
 
 .tituloIndex{
@@ -38,7 +38,10 @@ nav{
     text-shadow: 0 0 20px;
     transition: 0.1s;
 }
-
+.tituloDonaciones:hover{
+    scale: 1.04;
+    transition: 0.2s;
+}
 
 a{
     text-decoration: none;
@@ -46,10 +49,21 @@ a{
 }
 
 .fotoPresentacion{
-    height: 260px;
-    width: 250px;
+    background-image: url(./img/presentacion.png);
+    background-size: cover;
+    height: 360px;
+    width: 350px;
     border-radius: 50%;
     margin-top: 10%;
+    margin-left: 32%;
+}
+
+.fotoPresentacion:hover{
+    background-image: url(./img/presentacionHover.png);
+    background-size: cover;
+    height: 360px;
+    width: 350px;
+
 }
 
 .cajaIndex{
@@ -59,7 +73,7 @@ a{
 }
 .footerFondo {
     background: rgb(199, 214, 196);
-    position: fixed ;
+    position: ;
     bottom: 0;
     left: 0;
     right: 0;
@@ -99,6 +113,59 @@ a{
 textarea{
     resize: none;
 }
+.cajaDonaciones{
+    background-size: cover;
+    background-color: rgba(53, 84, 53, 0.775);
+    margin: 5%;
+    padding-bottom: 100px;
+    border-radius: 30px;
+    font-size: 140%;
+}
+
+.tituloDonaciones{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 5rem;
+    color: rgb(191, 218, 169);
+}
+
+main div img:hover{
+    scale: 1.03;
+    transition: 1s;
+    box-shadow: 0 0 20px black;
+}
+
+.card:hover{
+    scale: 1.03;
+    transition: 0.2s;
+    box-shadow: 0 0 20px black;
+
+}
+
+.cheems{
+    display: inline-block;
+    background-image: url(/img/donaciones.png);
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+}
+.cheems:hover{
+    display: inline-block;
+    background-image: url(/img/donaciones2.png);
+    background-size: cover;
+    height: 300px;
+    width: 350px; 
+    transition: 0.09s;
+}
+.displayFlexDonaciones{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: -10%;
+}
+
+.pinturaTitulo:hover{
+    
+}
 
 @media screen and (max-width: 720px){
     .tamañoLogo{
@@ -109,7 +176,6 @@ textarea{
         background-image: url(./img/bannerM.png);
         background-size: cover;
         padding: 27%;
-        mask: rgb(0, 0, 0);
     }
     .tituloIndex{
         font-family: 'Reenie Beanie', cursive;
@@ -134,6 +200,17 @@ textarea{
     .botonSumbit{
         margin-bottom: 18%;
     }
+    .tituloDonaciones{
+        font-size: 3rem;
+    }
+    .redesIconos{
+        padding: 23px 20px 0px 40px;
+        text-decoration: none;
+        color: rgb(5, 42, 7);
+        transition: 0.4s;
+    }
+
+    
 }
 
 
