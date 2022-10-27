@@ -119,14 +119,14 @@ nav{
 }
 .cheems{
     display: inline-block;
-    background-image: url(/img/donaciones.png);
+    background-image: url(img/donaciones.png);
     background-size: cover;
     height: 300px;
     width: 350px;
 }
 .cheems:hover{
     display: inline-block;
-    background-image: url(/img/donaciones2.png);
+    background-image: url(img/donaciones2.png);
     background-size: cover;
     height: 300px;
     width: 350px; 
