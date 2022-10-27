@@ -117,21 +117,6 @@ nav{
     scale: 1.04;
     transition: 0.2s;
 }
-.cheems{
-    display: inline-block;
-    background-image: url(img/donaciones.png);
-    background-size: cover;
-    height: 300px;
-    width: 350px;
-}
-.cheems:hover{
-    display: inline-block;
-    background-image: url(img/donaciones2.png);
-    background-size: cover;
-    height: 300px;
-    width: 350px; 
-    transition: 0.09s;
-}
 .displayFlexDonaciones{
     display: flex;
     align-content: center;
