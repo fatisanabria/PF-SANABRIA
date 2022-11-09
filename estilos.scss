@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Covered+By+Your+Grace&family=Lobster+Two:ital@1&family=Reenie+Beanie&family=Rubik+Marker+Hatch&display=swap');
+$scale: 1.03;
+$fuente1:'Times New Roman', Times, serif;
+$fuente2:"Reenie Beanie", cursive;
+$fuente3:'Amatic SC', cursive; 
 /* General */
 *{ 
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
+    font-family: $fuente2;}
 body{
     background-color: #f0f4e7;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23dae5cc' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
@@ -19,37 +22,37 @@ nav{
 }
 /* BANNER */
 .banner{
-    background-image: url(./img/bannerCarousel.png);
+    background-image: url(./img/bannerCarousel.jpg);
     background-size: cover;
     padding: 17%;
 }
 .tituloIndex{
-    font-family: 'Reenie Beanie', cursive;
+    font-family:$fuente2;
     font-size: 150px;
     color: #d7dbae;
-}
-.tituloIndex:hover{
-    text-shadow: 0 0 20px;
-    transition: 0.1s;
+    &:hover{
+        text-shadow: 0 0 20px;
+        transition: 0.1s;
+    }
 }
 /* PRESENTACIÓN */
+.displayFlexPresentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .fotoPresentacion{
     background-image: url(./img/presentacion.png);
     background-size: cover;
     height: 360px;
     width: 350px;
     border-radius: 50%;
-}
-.fotoPresentacion:hover{
-    background-image: url(./img/presentacionHover.png);
-    background-size: cover;
-    height: 360px;
-    width: 350px;
-}
-.displayFlexPresentacion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &:hover{
+        background-image: url(./img/presentacionHover.png);
+        background-size: cover;
+        height: 360px;
+        width: 350px;
+    }
 }
 /* CARTAS PRESENTACION */
 .cajaIndex{
@@ -60,7 +63,7 @@ nav{
     padding: 10% 0% 10% 0%;
 }
 .card:hover{
-    scale: 1.03;
+    scale: $scale;
     transition: 0.2s;
     box-shadow: 0 0 20px black;
 }
@@ -72,83 +75,64 @@ nav{
     right: 0;
     height: 15%;
     width: 100%;
+    .redes{
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 15px 0px;
+        font-size: 30px;
+    }
+    .redesIconos{
+        padding: 23px 50px 0px 50px;
+        text-decoration: none;
+        color: rgb(5, 42, 7);
+        transition: 0.4s;
+        &:hover{
+            color: rgba(255, 255, 255, 0.701);
+            text-shadow: 0 0 5px;
+            transform: scale(1.2);
+        }
+    }
+    .pFooter{    
+        display: flex;
+        justify-content: center;
+        font-family:$fuente3;
+        font-size: 20px;
+        text-align: center;
+        margin: 0%;
+        color: rgb(0, 0, 0);
+    } 
 }
-.redes{
-    display: flex;
-    justify-content: center;
-    margin: 0px 0px 15px 0px;
-    font-size: 30px;
-}
-.redesIconos{
-    padding: 23px 50px 0px 50px;
-    text-decoration: none;
-    color: rgb(5, 42, 7);
-    transition: 0.4s;
-}
-.redesIconos:hover{
-    color: rgba(101, 189, 110, 0.701);
-    text-shadow: 0 0 7px;
-    transform: scale(1.2);
-}
-.pFooter{    
-    display: flex;
-    justify-content: center;
-    font-family: 'Amatic SC', cursive;
-    font-size: 20px;
-    text-align: center;
-    margin: 0%;
-    color: rgb(0, 0, 0);
-} 
 /* DONACIONES */
-.cajaDonaciones{
-    background-size: cover;
-    background-color: rgba(53, 84, 53, 0.775);
-    margin: 5%;
-    padding-bottom: 100px;
-    border-radius: 30px;
-    font-size: 140%;
-}
-.tituloDonaciones{
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 5rem;
-    color: rgb(75, 99, 55);
-}
-.tituloDonaciones:hover{
-    scale: 1.04;
-    transition: 0.2s;
-}
-.cheems{
-    display: inline-block;
-    background-image: url(img/donaciones.png);
-    background-size: cover;
-    height: 300px;
-    width: 350px;
-}
-.cheems:hover{
-    display: inline-block;
-    background-image: url(img/donaciones2.png);
-    background-size: cover;
-    height: 300px;
-    width: 350px; 
-    transition: 0.09s;
-}
 .displayFlexDonaciones{
     display: flex;
     align-content: center;
     justify-content: center;
     margin-bottom: -10%;
 }
-.pinturaTitulo:hover{
-    background-image: url(./img/pincelada.png);
+.tituloDonaciones{
+    font-family:$fuente2;
+    font-size: 5rem;
+    color: rgb(75, 99, 55);
+}
+.cheems{
+    display: inline-block;
+    background-image: url(img/cheems.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0% 10% 0% 10%;
-    animation-duration: 2s;
-    opacity: 80%;
+    height: 300px;
+    width: 350px;
+    margin-bottom: -6px;
+    &:hover{
+        display: inline-block;
+        background-image: url(img/cheemsHover.png);
+        background-size: cover;
+        height: 300px;
+        width: 350px; 
+        transition: 0.09s;
+    }
 }
 /* GALERIA */
 main div img:hover{
-    scale: 1.03;
+    scale: $scale;
     transition: 1s;
     box-shadow: 0 0 20px black;
 }
@@ -156,7 +140,7 @@ main div img:hover{
 textarea{
     resize: none;
 }
-/* @MEDIAQ */
+/* -------------------------@MEDIAQ--------------------------------*/
 @media only screen and (max-width: 720px){
     /* index */
     .tamañoLogo{
@@ -164,16 +148,16 @@ textarea{
         width: 200px;
     }
     .banner{
-        background-image: url(./img/bannerM.png);
+        background-image: url(./img/bannerMediaq.png);
         background-size: cover;
-        padding: 27%;
+        padding: 35%;
     }
     .tituloIndex{
-        font-family: 'Reenie Beanie', cursive;
+        font-family: $fuente2;
         font-size: 60px;
-        color: #ffffff;
+        color: #d7dbae;
         text-shadow: 0 0 20px black;
-        margin-left: -40px;
+        margin-left: -30%;
     }
     .fotoPresentacion{
         background-image: url(./img/presentacion.png);
@@ -181,21 +165,17 @@ textarea{
         height: 260px;
         width: 250px;
         border-radius: 50%;
-    }
-    .fotoPresentacion:hover{
-        background-image: url(./img/presentacionHover.png);
-        background-size: cover;
-        height: 260px;
-        width: 250px;
-    }
-    .indexGrid{
-        width: 100%;
-        text-align: center;
+        &:hover{
+            background-image: url(./img/presentacionHover.png);
+            background-size: cover;
+            height: 260px;
+            width: 250px;
+        }
     }
     /* contacto */
     .botonSumbit{
         margin-bottom: 18%;
-    }
+    } 
     /* donaciones */
     .tituloDonaciones{
         font-size: 3rem;
@@ -207,6 +187,13 @@ textarea{
         color: rgb(5, 42, 7);
         transition: 0.4s;
     }
+}
+@media only screen and (max-width: 480px)
+    {
+        .displayFlexDonaciones{
+            width: 600px;
+            margin-left: -75px;
+        }
 }
 
 

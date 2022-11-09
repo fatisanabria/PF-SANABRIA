@@ -5,7 +5,7 @@
   margin: 0%;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Reenie Beanie", cursive;
 }
 
 body {
@@ -23,7 +23,7 @@ nav {
 
 /* BANNER */
 .banner {
-  background-image: url(./img/bannerCarousel.png);
+  background-image: url(./img/bannerCarousel.jpg);
   background-size: cover;
   padding: 17%;
 }
@@ -33,13 +33,18 @@ nav {
   font-size: 150px;
   color: #d7dbae;
 }
-
 .tituloIndex:hover {
   text-shadow: 0 0 20px;
   transition: 0.1s;
 }
 
 /* PRESENTACIÓN */
+.displayFlexPresentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fotoPresentacion {
   background-image: url(./img/presentacion.png);
   background-size: cover;
@@ -47,18 +52,11 @@ nav {
   width: 350px;
   border-radius: 50%;
 }
-
 .fotoPresentacion:hover {
   background-image: url(./img/presentacionHover.png);
   background-size: cover;
   height: 360px;
   width: 350px;
-}
-
-.displayFlexPresentacion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* CARTAS PRESENTACION */
@@ -85,28 +83,24 @@ nav {
   height: 15%;
   width: 100%;
 }
-
-.redes {
+.footerFondo .redes {
   display: flex;
   justify-content: center;
   margin: 0px 0px 15px 0px;
   font-size: 30px;
 }
-
-.redesIconos {
+.footerFondo .redesIconos {
   padding: 23px 50px 0px 50px;
   text-decoration: none;
   color: rgb(5, 42, 7);
   transition: 0.4s;
 }
-
-.redesIconos:hover {
-  color: rgba(101, 189, 110, 0.701);
-  text-shadow: 0 0 7px;
+.footerFondo .redesIconos:hover {
+  color: rgba(255, 255, 255, 0.701);
+  text-shadow: 0 0 5px;
   transform: scale(1.2);
 }
-
-.pFooter {
+.footerFondo .pFooter {
   display: flex;
   justify-content: center;
   font-family: "Amatic SC", cursive;
@@ -117,13 +111,11 @@ nav {
 }
 
 /* DONACIONES */
-.cajaDonaciones {
-  background-size: cover;
-  background-color: rgba(53, 84, 53, 0.775);
-  margin: 5%;
-  padding-bottom: 100px;
-  border-radius: 30px;
-  font-size: 140%;
+.displayFlexDonaciones {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: -10%;
 }
 
 .tituloDonaciones {
@@ -132,43 +124,21 @@ nav {
   color: rgb(75, 99, 55);
 }
 
-.tituloDonaciones:hover {
-  scale: 1.04;
-  transition: 0.2s;
-}
-
 .cheems {
   display: inline-block;
-  background-image: url(img/donaciones.png);
+  background-image: url(img/cheems.png);
   background-size: cover;
   height: 300px;
   width: 350px;
+  margin-bottom: -6px;
 }
-
 .cheems:hover {
   display: inline-block;
-  background-image: url(img/donaciones2.png);
+  background-image: url(img/cheemsHover.png);
   background-size: cover;
   height: 300px;
   width: 350px;
   transition: 0.09s;
-}
-
-.displayFlexDonaciones {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  margin-bottom: -10%;
-}
-
-.pinturaTitulo:hover {
-  background-image: url(./img/pincelada.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0% 10% 0% 10%;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  opacity: 80%;
 }
 
 /* GALERIA */
@@ -183,7 +153,7 @@ textarea {
   resize: none;
 }
 
-/* @MEDIAQ */
+/* -------------------------@MEDIAQ--------------------------------*/
 @media only screen and (max-width: 720px) {
   /* index */
   .tamañoLogo {
@@ -191,16 +161,16 @@ textarea {
     width: 200px;
   }
   .banner {
-    background-image: url(./img/bannerM.png);
+    background-image: url(./img/bannerMediaq.png);
     background-size: cover;
-    padding: 27%;
+    padding: 35%;
   }
   .tituloIndex {
     font-family: "Reenie Beanie", cursive;
     font-size: 60px;
-    color: #ffffff;
+    color: #d7dbae;
     text-shadow: 0 0 20px black;
-    margin-left: -40px;
+    margin-left: -30%;
   }
   .fotoPresentacion {
     background-image: url(./img/presentacion.png);
@@ -214,10 +184,6 @@ textarea {
     background-size: cover;
     height: 260px;
     width: 250px;
-  }
-  .indexGrid {
-    width: 100%;
-    text-align: center;
   }
   /* contacto */
   .botonSumbit {
@@ -233,5 +199,11 @@ textarea {
     text-decoration: none;
     color: rgb(5, 42, 7);
     transition: 0.4s;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .displayFlexDonaciones {
+    width: 600px;
+    margin-left: -75px;
   }
 }/*# sourceMappingURL=estilos.css.map */
